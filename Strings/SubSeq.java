@@ -25,7 +25,7 @@ public class SubSeq {
 
     static ArrayList<String> subSeq1(String ori, String ans){
         if(ori.isEmpty()){
-            ArrayList<String> list = new ArrayList<String>();
+            ArrayList<String> list = new ArrayList<>();
             list.add(ans);
             return list;
         }
