@@ -3,8 +3,8 @@ import java.util.Arrays;
 
 class CommonElements{
     public static void main(String[] args) {
-        int [] arr1 = {3,4,2,2,4};
-        int [] arr2 = {3,2,2,7};
+        int [] arr1 = {3,1,2,1,1,4,5,5};
+        int [] arr2 = {6,1,1,4,4,2,8};
 
         ArrayList<Integer> result = commonElements(arr1, arr2);
         
@@ -27,9 +27,15 @@ class CommonElements{
         while(i < n1 && j < n2){
             if(a[i] == b[j]){
                 result.add(a[i]);
+                i++;
+                j++;
             }
-            i++;
-            j++;
+            else if(a[i] < b[j]){
+                i++;
+            }
+            else{
+                j++;
+            }            
         }
         return result;
     }
