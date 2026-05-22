@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
+
+// T(n) = O(nlogn) + O(nlogn) + O(n1 + n2)  = O(nlogn)  and Space complexity = O(n1 + n2) for result arraylist
+// In short T(n) = O(nlogn)
 class CommonElements{
     public static void main(String[] args) {
         int [] arr1 = {3,1,2,1,1,4,5,5};
@@ -16,7 +19,7 @@ class CommonElements{
         int n1 = a.length;
         int n2 = b.length;
 
-        Arrays.sort(a);
+        Arrays.sort(a);                   
         Arrays.sort(b);
 
         int i = 0;
